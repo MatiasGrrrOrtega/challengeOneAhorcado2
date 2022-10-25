@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.ico" />
+    <title>Juego Ahorcado | Alura Challanges - Oracle ONE</title>
+    <meta name="description" content="Adivina la palabra secreta">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title__header">AH<img class="logo" src="img/soga-logo.png" alt="logo">RCADO</h1>
+        </header>
+        
+        <main class="main__container">
+            <section id="seccion__inicio" class="seccion__inicio">
+                <img src="./img/ahorcadoHome.jpg" class="imagen__seccion__inicio" alt="imagen__seccion__inicio">
+                <button id="boton__play__game" class="boton boton__play__game"> Iniciar juego</button>  
+                <button id="boton__anadir__palabra" class="boton boton__anadir__palabra">Agregar nueva palabra</button>
+            </section>    
+        
+            <section id="seccion__nueva__palabra" class="seccion__nueva__palabra">
+                <div class="nueva__palabra__botones">
+                    <p class="advertencia">Máximo 8 caracteres</p>
+                    <input class="nueva__palabra__input" id="nueva__palabra__input" type="text" placeholder="Escribe una palabra ..." autocomplete="off" maxlength="8">
+                </div>
+                <button id="boton__guardar__palabra" class="boton boton__guardar__palabra">Guardar y Empezar a jugar</button>
+                <button id="boton__cancelar" class="boton boton__cancelar">Cancelar</button>
+            </section>
+        
+            <section id="seccion__juego" class="seccion__juego">
+                <div class="container__ahorcado">
+                    <div class="hombre__ahorcado">
+                        <img id="palo" src="img/0.png" alt="Palo">
+                    </div>
+                    <div class="ahorcado__palabra__oculta" id="word"></div>
+                    <div class="ahorcado__opciones" id="letras">
+                    </div>
+                </div>
+                <div class="game__botones">
+                    <button id="boton__nuevo__juego" class="boton boton__nuevo__juego">Nuevo juego</button>
+                    <button id="boton__desistir" class="boton boton__desistir">Desistir</button>
+                </div>
+            </section> 
+        </main>
+        
+        <footer class="footer">
+            <p>Challange Alura - Oracle ONE | Realizado por Matias Gabriel Ortega</p>
+        </footer>
+    </div>
+    <script src="js/inicio.js"></script>
+    <script src="js/palabras.js"></script>
+    <script src="js/nuevaPalabra.js"></script>
+    <script src="js/game.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    margin: 12PX 0;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.boton{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: .6s background ease;
+    margin-top: 20px;
+}
+
+.main__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*HEADER*/
+.logo{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+/*SECCION INICIO*/
+.seccion__inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen__seccion__inicio{
+    width: 390px;
+    height: 330px;
+}
+
+.boton__play__game{
+    background-color: #6060e2;
+    color: #f0f8ff;
+    position: relative;
+}
+
+.boton__play__game:hover{
+    background-color: #3535a3;
+    transform: translateY(-2px);
+}
+
+.boton__anadir__palabra{
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.boton__anadir__palabra:hover{
+    background-color: #dbdbdb;
+    transform: translateY(-2px);
+}
+
+/*FIN SECCION INICIO*/
+
+/*SECCION NUEVA PALABRA*/
+.seccion__nueva__palabra{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nueva__palabra__input{
+    width: 300px;
+    height: 30px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+.advertencia{
+    font-size: 12px;
+}
+
+.boton__guardar__palabra{
+    background-color: #6060e2;
+    color: #f0f8ff;
+}
+
+.boton__guardar__palabra:hover{
+    background-color: #3535a3;
+    transform: translateY(-2px);
+}
+
+.boton__cancelar{
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.boton__cancelar:hover{
+    background-color: #dbdbdb;
+    transform: translateY(-2px);
+}
+/*FIN SECCION NUEVA PALABRA*/
+
+/* SECCION DEL JUEGO */
+
+.seccion__juego{
+    display: none;
+}
+
+.container__ahorcado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ahorcado__palabra__oculta{
+    text-align: center;
+}
+
+.ahorcado__opciones{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 12px auto;
+}
+
+.abc {
+    display: inline-block;
+    padding: 0.7em;
+    margin: 3px;
+    width: 30px;
+    text-align: center;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.manito{
+    cursor: pointer;
+}
+
+.oculto {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5px;
+    width: 10px;
+    text-align: center;
+    border-bottom: 3px solid #666;
+    text-transform: uppercase;
+}
+
+#palo{
+    width: 200px;
+    height: 220px;
+}
+
+.letra-correcta{
+
+}
+
+.bg-secondary{
+    background-color: #6060e2;
+    color: #f0f8ff;
+    transition: .4s background ease;
+}
+
+.bg-secondary:hover{
+    background-color: #4545a3;
+}
+
+.bg-primary{
+    background-color: #07d400;
+    color: #f0f8ff;
+}
+
+.bg-error{
+    background-color: red;
+}
+
+.bg-error:hover{
+    background-color: red;
+}
+
+.game__botones{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.boton__nuevo__juego{
+    background-color: #6060e2;
+    color: #f0f8ff;
+    position: relative;
+}
+
+.boton__nuevo__juego:hover{
+    background-color: #3535a3;
+    transform: translateY(-2px);
+}
+
+.boton__desistir{
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.boton__desistir:hover{
+    background-color: #dbdbdb;
+    transform: translateY(-2px);
+}
+
+/*FIN SECCION DEL JUEGO*/
+
+/*FOOTER*/
+
+.footer{
+    text-align: center;
+    height: 5%;
+    font-size: .7em;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main__container{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main__container{
+        width: 80vw;
+        margin: auto;  
+    }
+
+    .imagen__seccion__inicio{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main__container{
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main__container{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .imagen__seccion__inicio{
+        width: 350px;
+        height: 330px;
+    }
+
+    .abc {
+        padding: 0.7em;
+        margin: 2px;
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    .boton{
+        width: 280px;
+        height: 40px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
